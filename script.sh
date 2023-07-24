@@ -24,6 +24,9 @@ git clone https://opendev.org/openstack/devstack
 cd devstack
 git branch stable/2023.1
 
+# le script vas utilisé le compte stack créer plustot
+sudo -u stack -i
+
 # si dans le fichier de config on met que le noeud sur lequel on utilise le script est 'controller' alors on fais l'installation comme sur le site d'openstack
 if [ $NODE == 'controller' ]
 then
